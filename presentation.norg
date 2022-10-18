@@ -42,3 +42,36 @@
   - Interaction avec la ligne de commande
   - It's fun!
   ===
+
+* Setup 
+
+** Prendre une distribution déjà existante:
+   - [Lunarvim](https://www.lunarvim.org/)
+   - [doom-nvim](https://github.com/NTBBloodbath/doom-nvim)
+   - [spacevim](https://spacevim.org/)
+
+** Construire sa propre configuration (recommandé)
+   - configurer les options de vim
+   - installer un gestionnaire de plugins
+   -- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+   - ajouter un plugin à la fois selon le besoin, sinon on s'y perd
+   - configurer chaque plugin séparément, sinon ça devient ingérable
+   ===
+
+* Plugins
+
+** status lines
+  - nvim-lualine/lualine.nvim
+  - akinsho/bufferline.nvim
+
+** couleurs et icônes
+  - ellisonleao/gruvbox.nvim
+  - kyazdani42/nvim-web-devicons
+
+** Edition de texte
+   - numToStr/Comment.nvim
+
+
+
+  - kyazdani42/nvim-tree.lua
+  - tpope/vim-fugitive
