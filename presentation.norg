@@ -17,7 +17,6 @@
 
   - neovim [Community Driven] (2015)
     moderniser la codebase de vim et rendre extensible avec lua embarqué
-    ===
 
 * Édition de texte modale (attention c'est addictif!)
 
@@ -29,19 +28,17 @@
   Si vous n'êtes pas familiarisé avec (neo)vi(m):
   - vimtutor
   - https://vim-adventures.com/
-  ===
 
 * Avantages de vim
 
   - C'est installé de partout :)
   - Édition de texte à la vitesse de la lumière
-  - Extensible via vimscript (vim) ou lua (neovim)
-  - Macros
-  - Explorateur de fichiers
-  - Terminal embarqué
+  - Libre
+  - Leger
+  - Infiniment extensible via vimscript (vim) ou lua (neovim)
+  - Fonctionnalités très avancées out of the box (Macros, Explorateur de fichiers, Terminal embarqué +++)
   - Interaction avec la ligne de commande
   - It's fun!
-  ===
 
 * Setup 
 
@@ -49,29 +46,159 @@
    - [Lunarvim](https://www.lunarvim.org/)
    - [doom-nvim](https://github.com/NTBBloodbath/doom-nvim)
    - [spacevim](https://spacevim.org/)
+   - [AstroNvim](https://astronvim.github.io/)
 
 ** Construire sa propre configuration (recommandé)
    - configurer les options de vim
    - installer un gestionnaire de plugins
-   -- [packer.nvim](https://github.com/wbthomason/packer.nvim)
    - ajouter un plugin à la fois selon le besoin, sinon on s'y perd
    - configurer chaque plugin séparément, sinon ça devient ingérable
-   ===
 
-* Plugins
+* Prerequis
 
-** status lines
-  - nvim-lualine/lualine.nvim
-  - akinsho/bufferline.nvim
+  - wget ou équivalent (à priori installé sur la machine)
+  - g++ ou clang (à priori installé sur la machine)
+  - [nvm](https://github.com/nvm-sh/nvm)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep)
+  - [bat](https://github.com/sharkdp/bat)
 
-** couleurs et icônes
-  - ellisonleao/gruvbox.nvim
-  - kyazdani42/nvim-web-devicons
+* Configuration
 
-** Edition de texte
+** Plugins
+   -- wbthomason/packer.nvim
+
+** LSP
+   - neovim/nvim-lspconfig
+   - williamboman/nvim-lsp-installer
+
+** Autocompletion
+   - hrsh7th/nvim-cmp
+   -- hrsh7th/cmp-buffer
+   -- hrsh7th/cmp-path
+   -- hrsh7th/cmp-cmdline
+   -- hrsh7th/nvim-cmp
+   -- hrsh7th/cmp-nvim-lsp-signature-help
+   -- hrsh7th/cmp-nvim-lua
+   -- saadparwaiz1/cmp_luasnip
+   -- rcarriga/cmp-dap
+
+** Debug
+   - mfussenegger/nvim-dap
+   -- mfussenegger/nvim-dap-python
+
+** Syntaxe
+   - nvim-treesitter/nvim-treesitter
+
+** Fuzzy find
+   - nvim-telescope/telescope.nvim
+
+** Objets texte
+   - kana/vim-textobj-user
+
+* Apparences
+
+** Status lines
+   - nvim-lualine/lualine.nvim
+   - akinsho/bufferline.nvim
+
+** Couleurs et icônes
+   - ellisonleao/gruvbox.nvim
+   - kyazdani42/nvim-web-devicons
+   - luochen1990/rainbow
+   - p00f/nvim-ts-rainbow
+
+** Zoom
+   - Pocco81/true-zen.nvim
+   - folke/zen-mode.nvim
+
+** Indentation
+   - lukas-reineke/indent-blankline.nvim
+
+* Organisation
+
+** Git
+   - tpope/vim-fugitive
+   - lewis6991/gitsigns.nvim
+   - sindrets/diffview.nvim
+
+** Org
+   - nvim-neorg/neorg
+
+* Navigation
+
+** Fichiers
+   - kyazdani42/nvim-tree.lua
+
+** Undo
+   - mbbill/undotree
+
+** Minimap
+   - simrat39/symbols-outline.nvim
+
+** Marques page
+   - chentoast/marks.nvim
+
+** Registres
+   - tversteeg/registers.nvim
+
+** Raccourcis clavier
+   - folke/which-key.nvim
+
+* Edition de texte
+
+** Commentaire
    - numToStr/Comment.nvim
 
+** Objets texte
+   - kana/vim-textobj-line
+   - kana/vim-textobj-entire
+   - Julian/vim-textobj-variable-segment
+   - michaeljsmith/vim-indent-object
 
+** Curseurs multiples
+   - mg979/vim-visual-multi
 
-  - kyazdani42/nvim-tree.lua
-  - tpope/vim-fugitive
+** Alignement de texte
+   - junegunn/vim-easy-align
+
+** Snippets
+   - honza/vim-snippets
+   - rafamadriz/friendly-snippets
+
+** Echanger texte
+   - tommcdo/vim-exchange
+
+** Autopairs
+   - windwp/nvim-autopairs
+
+* Fuzzy find
+
+** Snippets
+   - benfowler/telescope-luasnip.nvim
+
+** Remplacer l'interface de selection native
+   - nvim-telescope/telescope-ui-select.nvim
+
+** Explorateur de fichiers
+   - nvim-telescope/telescope-file-browser.nvim
+
+** Projet
+   - nvim-telescope/telescope-project.nvim
+
+** Neorg
+   - nvim-neorg/neorg-telescope
+
+* Terminal
+
+** Gestion
+   - akinsho/toggleterm.nvim
+
+** Envoyer du texte
+   - jpalardy/vim-slime
+
+* LSP
+
+  - Diagnostics
+  - Aller à la définition
+  - Trouver utilisation
+  - Popup documentation
