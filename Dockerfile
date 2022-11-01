@@ -1,0 +1,36 @@
+FROM debian:latest
+
+# Update system
+RUN apt update && apt upgrade -y
+
+# Install dependencies
+RUN apt install wget tar git g++ python3 python3-venv ripgrep bat -y
+
+# Create new user without root access
+RUN useradd voltux -m
+USER voltux
+
+# Get neovim
+WORKDIR /home/voltux
+RUN mkdir opt
+WORKDIR /home/voltux/opt
+RUN wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.tar.gz
+RUN tar -xzvf nvim-linux64.tar.gz
+RUN rm nvim-linux64.tar.gz
+RUN echo 'alias nvim=$HOME/opt/nvim-linux64/bin/nvim' >> /home/voltux/.bashrc
+RUN mkdir -p /home/voltux/.config
+RUN ln -s /home/voltux/dotfiles/nvim/.config/nvim /home/voltux/.config/nvim
+
+# Get configuration files
+WORKDIR /home/voltux
+RUN git clone https://github.com/voltux/dotfiles.git
+
+# Get nvm node manager for LSP
+RUN wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh && bash ./install.sh
+RUN echo 'export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> .bashrc
+
+# Get sudoku solver project
+RUN mkdir workspace
+WORKDIR /home/voltux/workspace
+RUN git clone https://github.com/voltux/sudoku-solver-qt.git
+WORKDIR /home/voltux
