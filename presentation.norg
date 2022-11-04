@@ -25,9 +25,13 @@
   - Visuel
   - Commande
 
-  Si vous n'êtes pas familiarisé avec (neo)vi(m):
+  Si vous n'êtes pas familiarisé.e avec (neo)vi(m):
   - vimtutor
   - https://vim-adventures.com/
+
+  Pour des idées sur les différents plugins disponibles:
+  - https://vimawesome.com/ (vim + Neovim)
+  - https://github.com/rockerBOO/awesome-neovim (Neovim)
 
 * Avantages de vim
 
@@ -56,10 +60,14 @@
 
 * Prerequis
 
-  - wget ou équivalent (à priori installé sur la machine)
-  - g++ ou clang (à priori installé sur la machine)
+  - wget
+  - unzip 
+  - git
+  - python3
+  - python3-venv
+  - g++ ou clang
   - [nvm](https://github.com/nvm-sh/nvm)
-  - [ripgrep](https://github.com/BurntSushi/ripgrep)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep) 
   - [bat](https://github.com/sharkdp/bat)
 
 * Configuration
@@ -188,7 +196,7 @@
 ** Neorg
    - nvim-neorg/neorg-telescope
 
-* Terminal
+* Terminal intégré
 
 ** Gestion
    - akinsho/toggleterm.nvim
@@ -196,9 +204,18 @@
 ** Envoyer du texte
    - jpalardy/vim-slime
 
-* LSP
+* Language Server Protocol (LSP)
 
   - Diagnostics
   - Aller à la définition
   - Trouver utilisation
   - Popup documentation
+
+* Debug (DAP)
+
+  - Setup
+  - Points d'arrêt
+  - Lancement
+  - Navigation
+  - IHM
+  - Suivi d'expression
