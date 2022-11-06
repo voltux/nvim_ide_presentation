@@ -4,7 +4,7 @@ FROM debian:latest
 RUN apt update && apt upgrade -y
 
 # Install dependencies
-RUN apt install wget tar unzip git g++ python3 python3-venv python3-pip ripgrep bat -y
+RUN apt install wget tar unzip git g++ python3 python3-venv python3-pip ripgrep bat htop -y
 
 # Create new user without root access
 RUN useradd voltux -m
