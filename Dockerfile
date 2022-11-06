@@ -4,7 +4,7 @@ FROM debian:latest
 RUN apt update && apt upgrade -y
 
 # Install dependencies
-RUN apt install wget tar unzip git g++ python3 python3-venv ripgrep bat -y
+RUN apt install wget tar unzip git g++ python3 python3-venv python3-pip ripgrep bat -y
 
 # Create new user without root access
 RUN useradd voltux -m
@@ -33,6 +33,13 @@ RUN echo 'export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/
 RUN mkdir workspace
 WORKDIR /home/voltux/workspace
 RUN git clone https://github.com/voltux/sudoku-solver-qt.git
+
+# Install debugpy for dap
+WORKDIR /home/voltux
+RUN mkdir .virtualenvs
+WORKDIR /home/voltux/.virtualenvs
+RUN python3 -m venv debugpy
+RUN ./debugpy/bin/pip install debugpy
 WORKDIR /home/voltux
 
 # Configure git
