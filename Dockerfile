@@ -28,6 +28,7 @@ RUN ln -s /home/voltux/dotfiles/nvim/.config/nvim /home/voltux/.config/nvim
 # Get nvm node manager for LSP
 RUN wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh && bash ./install.sh
 RUN echo 'export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> .bashrc
+RUN rm install.sh
 
 # Get sudoku solver project
 RUN mkdir workspace
