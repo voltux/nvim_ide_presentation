@@ -72,6 +72,6 @@ le répertoire d'installation de Neovim
   
 le clone de mon dépôt de configuration personnelle
   
-- sudoku-solver-qt
+- workspace/sudoku-solver-qt
   
 le petit projet pour tester la configuration Neovim
