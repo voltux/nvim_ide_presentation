@@ -1,6 +1,6 @@
 * Nvim en tant que IDE
 
-  Le but de la présentation est de faciliter la découverte de quelques unes parmi les nombreuses possibilités d'extension de Neovim avec des plugins pour customiser l'outil et ajouter des fonctionnalités traditionnellement trouvées exclusivement sur des IDE
+  Le but de la présentation est de faciliter la découverte de quelques-unes des nombreuses possibilités d'extension de Neovim avec des plugins pour customiser l'outil et ajouter des fonctionnalités traditionnellement trouvées exclusivement sur des IDE
 
 ** Dépendances
    - docker
