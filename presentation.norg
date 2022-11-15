@@ -22,22 +22,22 @@
 
 * Histoire
 
-  - ed [Ken Thompson & Dennis Ritchie, Bell Labs] (1969)
+  ** ed [Ken Thompson & Dennis Ritchie, Bell Labs] (1969)
     Premier éditeur de texte pour UNIX développé par les créateurs de UNIX et de C chez AT&T Bell Labs
 
-  - em [George Coulouris, Queen Mary College] (1975)
+  ** em [George Coulouris, Queen Mary College] (1975)
     Amélioration de ed pour le rendre un peu plus "user friendly"
 
-  - ex [Bill Joy, Berkeley] (1976)
+  ** ex [Bill Joy, Berkeley] (1976)
     Amélioration de em pour ajouter des commandes
 
-  - vi [Bill Joy, Berkeley] (1976)
+  ** vi [Bill Joy, Berkeley] (1976)
     Mode :vi(suel) pour ex
 
-  - vim [Bram Moolenaar] (1991)
+  ** vim [Bram Moolenaar] (1991)
     vi customisable et extensible
 
-  - neovim [Community Driven] (2015)
+  ** neovim [Community Driven] (2015)
     moderniser la codebase de vim et rendre extensible avec lua embarqué
 
 * Édition de texte modale (attention c'est addictif!)
