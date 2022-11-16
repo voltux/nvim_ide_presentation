@@ -55,16 +55,30 @@
   - https://vimawesome.com/ (vim + Neovim)
   - https://github.com/rockerBOO/awesome-neovim (Neovim)
 
-* Avantages de vim
+* Pourquoi vim
 
-  - C'est installé de partout
-  - Édition de texte à la vitesse de la lumière
-  - Libre
-  - Léger
-  - Infiniment extensible via vimscript (vim) ou lua (neovim)
-  - Fonctionnalités très avancées out of the box (Macros, Explorateur de fichiers, Terminal embarqué +++)
-  - Interaction avec la ligne de commande
-  - It's fun!
+** Avantages
+
+   - C'est installé de partout
+   - Édition de texte à la vitesse de la lumière
+   - Libre
+   - Léger
+   - Infiniment extensible via vimscript (vim) ou lua (neovim)
+   - Fonctionnalités très avancées out of the box (Macros, Explorateur de fichiers, Terminal embarqué +++)
+   - Interaction avec la ligne de commande
+   - It's fun!
+
+** Besoin de développer ... ?
+
+   - En éditant du code plus vite que la lumière
+   - Sans environnement graphique (VM, container, ssh...)
+   - Sans droits admin
+   - Avec des ressources très limitées
+   - Sur des environnements toujours différents
+   - Sur un outil configurable de A à Z
+   - Sur un outil open source
+   - Sur un outil qui gère aussi vos slides de présentation et votre Todo liste
+   - De façon à pouvoir se la jouer auprès de ses collègues
 
 * Setup 
 
