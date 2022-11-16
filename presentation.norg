@@ -163,7 +163,6 @@
 ** Git
    - tpope/vim-fugitive
    - lewis6991/gitsigns.nvim
-   - sindrets/diffview.nvim
 
 ** Org
    - nvim-neorg/neorg
