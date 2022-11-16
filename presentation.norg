@@ -50,6 +50,7 @@
   Si vous n'êtes pas familiarisé.e avec (neo)vi(m):
   - vimtutor
   - https://vim-adventures.com/
+  - :h <...> (le système de help de vim est exceptionnellement bien documenté)
 
   Pour des idées sur les différents plugins disponibles:
   - https://vimawesome.com/ (vim + Neovim)
