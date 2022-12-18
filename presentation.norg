@@ -99,6 +99,10 @@
    - ajouter un plugin à la fois selon le besoin, sinon on s'y perd
    - configurer chaque plugin séparément, sinon ça devient ingérable
 
+** Ne pas commencer à 0
+
+   - [nvim-lua/kickstart{https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua}
+
 * Prerequis
 
   - wget
