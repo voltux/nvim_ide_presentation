@@ -102,6 +102,7 @@
 ** Ne pas commencer à 0
 
    - [nvim-lua/kickstart{https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua}
+   - [TJ Devries Effective Neovim: Instant IDE]{https://www.youtube.com/watch?v=stqUbv-5u2s}
 
 * Prerequis
 
