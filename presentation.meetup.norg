@@ -2,9 +2,6 @@
 
   Un IDE pour les gouverner tous
 
-  Ioannis ARAPIS
-  OVHcloud
-
 * whoami
 
 ** Né il y a bien longtemps, dans un pays lointain
@@ -63,24 +60,24 @@
   - https://vimawesome.com/ (vim + Neovim)
   - https://github.com/rockerBOO/awesome-neovim (Neovim)
 
-* Pourquoi (Neo)vim
+* Pourquoi vim
 
 ** Avantages
 
-   - Installable de partout
+   - C'est installé (ou installable...) de partout
    - Édition de texte à la vitesse de la lumière
-   - Fonctionnalités très avancées out of the box (Macros, Explorateur de fichiers, Terminal embarqué +++)
-   - Extensible
-   - Libre & Open source
+   - Libre
    - Léger
+   - Infiniment extensible via vimscript (vim) ou lua (neovim)
+   - Fonctionnalités très avancées out of the box (Macros, Explorateur de fichiers, Terminal embarqué +++)
    - Interaction avec la ligne de commande
    - It's fun!
 
 ** Besoin de développer ... ?
 
-   - En éditant du code plus vite que la lumière (j'ai déjà dit ça?)
+   - En éditant du code plus vite que la lumière
    - Sans environnement graphique (VM, container, ssh...)
-   - Sans droits admin pour installation
+   - Sans droits admin
    - Avec des ressources très limitées
    - Sur des environnements toujours différents
    - Sur un outil configurable de A à Z
@@ -88,18 +85,9 @@
    - Sur un outil qui gère aussi vos slides de présentation et votre Todo liste
    - De façon à pouvoir se la jouer auprès de ses collègues
 
-** Qu'est-ce qui différencie un IDE d'un éditeur de texte
-   - coloration syntaxique
-   - autocompletion
-   - formattage
-   - intellisense: notion de projet, aller à la définition, annotation aide/documentation, actions...
-   - gestionnaire de fichiers
-   - système de contrôle de version (aller ok git quoi :p)
-   - debugger
-
 * Setup 
 
-** Prendre une distribution préconfigurée déjà existante:
+** Prendre une distribution déjà existante:
    - [Lunarvim](https://www.lunarvim.org/)
    - [doom-nvim](https://github.com/NTBBloodbath/doom-nvim)
    - [spacevim](https://spacevim.org/)
@@ -116,9 +104,21 @@
    - [nvim-lua/kickstart{https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua}
    - [TJ Devries Effective Neovim: Instant IDE]{https://www.youtube.com/watch?v=stqUbv-5u2s}
 
+* Prerequis
+
+  - wget
+  - unzip 
+  - git
+  - python3
+  - python3-venv
+  - g++ ou clang
+  - [nvm](https://github.com/nvm-sh/nvm)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep) 
+  - [bat](https://github.com/sharkdp/bat)
+
 * Configuration
 
-** Plugin manager
+** Plugins
    -- wbthomason/packer.nvim
 
 ** LSP
@@ -146,7 +146,8 @@
 ** Fuzzy find
    - nvim-telescope/telescope.nvim
 
-** Objets texte - kana/vim-textobj-user
+** Objets texte
+   - kana/vim-textobj-user
 
 * Apparences
 
