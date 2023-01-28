@@ -1,0 +1,188 @@
+* Neovim
+
+  *One IDE to rule them all*
+
+  Ioannis ARAPIS
+  OVHcloud
+
+** Disclaimer
+
+   /Modal text editing is highly addictive, in case of emergency please consult your System Administrator/
+
+* whoami
+
+  Lazy mathematician in desperate need to automate anything that can be automated
+
+** Born a long time ago in a country far far away (well not so far actually...)
+
+   No need for a text editor at the time
+
+** Engineering studies in Applied Mathematics
+
+   First contact with code, no VIM
+
+** Mathematics teacher, journalist, translator
+
+   I did some serious text editing at the time, still no VIM
+
+** Developer / SRE
+
+   First contact with VIM, it was *NOT* love at first site
+
+* Why (Neo)vim
+
+** Advantages
+
+   - Light speed text editing
+   - Advanced features out of the box (Macros, File explorer, Embedded terminal +++)
+   - Installed or installable everywhere
+   - Infinitely extensible
+   - Free & Open source
+   - Lightweight
+   - Seamless interaction with the command line
+   - It's fun!
+
+** In need to develop ... ?
+
+   - Editing text faster than light (did I already mention that?)
+   - When no graphical environment is available (VM, container, ssh...)
+   - Without admin rights to install software
+   - On very limited resources
+   - On multiple different environments
+   - On an infinitely extensible/customisable tool
+   - On open source software
+   - On the same tool used for the slides of this presentation
+   - While boasting in front of all your colleagues on the superiority of your tools
+
+* Features of an IDE vs simple text editor 
+
+  Probably non exhaustive but everything you need should be here
+
+  - extensible
+  - project management
+  - file explorer
+  - syntax highlighting
+  - fuzzy find
+  - code snippets
+  - autocompletion
+  - intellisense (syntax awareness, linting, formatting...)
+  - integrated terminal
+  - debugger
+  - version control
+
+* History
+
+** ed [Ken Thompson & Dennis Ritchie, Bell Labs] (1969)
+   First text editor for UNIX developped by the creators of UNIX and the C language at AT&T Bell Labs
+
+** em [George Coulouris, Queen Mary College] (1975)
+   Improvement on ed, more "user friendly"
+
+** ex [Bill Joy, Berkeley] (1976)
+   Improvement on em with additional commands
+
+** vi [Bill Joy, Berkeley] (1976)
+   :vi(sual) mode for ex
+
+** vim [Bram Moolenaar] (1991)
+   Customisable and extensible vi
+
+** neovim [Community Driven] (2015)
+   Clean VIM codebase from legacy code and embed lua
+
+* Let's see what we can do
+
+** Plugin manager
+   -- wbthomason/packer.nvim
+
+** Org
+   - nvim-neorg/neorg
+
+** Files & history
+   - kyazdani42/nvim-tree.lua
+   - mbbill/undotree
+
+** Syntax
+   - nvim-treesitter/nvim-treesitter
+   - simrat39/symbols-outline.nvim
+
+** Fuzzy find
+   - nvim-telescope/telescope.nvim
+
+** LSP (Intellisense)
+   - neovim/nvim-lspconfig
+   - williamboman/nvim-lsp-installer
+
+** Autocompletion
+   - hrsh7th/nvim-cmp
+
+** Terminal integration
+   - akinsho/toggleterm.nvim
+
+** REPL & Debugger
+   - jpalardy/vim-slime
+   - mfussenegger/nvim-dap
+   -- mfussenegger/nvim-dap-python
+
+** Git
+   - tpope/vim-fugitive
+   - lewis6991/gitsigns.nvim
+
+* Where to look for more info
+
+** Get started
+
+*** Not familiar at all with (Neo)vim
+
+    - $ vimtutor
+    - :help <HELP_SUBJECT> (the (Neo)vim help system is exceptionally well documented)
+    - [A nice browser game around vim](https://vim-adventures.com/)
+    - [A nice practice game plugin](https://github.com/ThePrimeagen/vim-be-good)
+
+*** Ideas on the vast world of (Neo)vim features and plugins:
+
+    - [A collection of vim plugins](https://vimawesome.com/)
+    - [A collection of Neovim plugins](https://github.com/rockerBOO/awesome-neovim)
+    - [This week in Neovim](https://this-week-in-neovim.org/)
+
+*** Create your own configuration
+
+    - Configure editor options
+    - Install a plugin manager
+    - Add plugins (one at a time as need progresses, else it's easy to get lost)
+    - Keep plugin configuration nice and tidy, in separate files
+
+    There are numerous resources for all topics with a simple search
+
+    For inspiration from my [personal configuration](https://github.com/voltux/dotfiles/tree/master/nvim/.config/nvim): 
+
+*** Advanced minimal configuration without starting from scratch
+
+    - [nvim-lua/kickstart]{https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua}
+    - [TJ Devries Effective Neovim: Instant IDE]{https://www.youtube.com/watch?v=stqUbv-5u2s}
+
+*** Examples of preconfigured distributions
+
+    - [AstroNvim](https://astronvim.github.io/)
+    - [Lunarvim](https://www.lunarvim.org/)
+    - [doom-nvim](https://github.com/NTBBloodbath/doom-nvim)
+    - [spacevim](https://spacevim.org/)
+
+** Acknowledgements
+
+   - [Neovim](https://neovim.io/)
+   - [Vim](https://www.vim.org/)
+   - [Computerphile: sudoku solver](https://www.youtube.com/watch?v=G_UYXzGuqvM&t=4s)
+   - [Computerphile: laziness in python](https://www.youtube.com/watch?v=5jwV3zxXc8E)
+   - [Reddit: r/neovim](https://www.reddit.com/r/neovim/)
+   - [Thanos Tsouanas](https://tsouanas.org/)
+
+* The end
+
+** Q/A
+
+   - Any questions before converting full time to Neovim?
+
+** Get a closer look at this presentation
+
+   Github: [*voltux*](https://github.com/voltux/nvim_ide_presentation/blob/main/presentation_vtt.norg)

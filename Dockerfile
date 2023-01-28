@@ -34,6 +34,7 @@ RUN rm install.sh
 RUN mkdir workspace
 WORKDIR /home/voltux/workspace
 RUN git clone https://github.com/voltux/sudoku-solver-qt.git
+RUN git clone https://github.com/voltux/nvim_ide_presentation.git
 
 # Install debugpy for dap
 WORKDIR /home/voltux
@@ -42,6 +43,11 @@ WORKDIR /home/voltux/.virtualenvs
 RUN python3 -m venv debugpy
 RUN ./debugpy/bin/pip install debugpy
 WORKDIR /home/voltux
+
+RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User LspInstallComplete quitall' "+MasonInstall python-lsp-server" "+sleep 3" +qa
+RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User TSInstallComplete quitall' "+TSInstall python" "+sleep 10" +qa
+RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 # Configure git
 RUN git config --global user.email "voltux@debian-nvim.com"
