@@ -53,12 +53,9 @@ nvim
 ```
   Neovim se lancera et les plugins seront installés automatiquement. Si on rencontre quelques erreurs à la fin de l'installation on peut lancer la commande:
 ```vim
-:PackerSync
+:Lazy sync
 ```
-  afin de relancer la mise à jour pour que tous les plugins s'installent correctement.
-  
-Une fois le processus terminé, on peut relancer Neovim avec sa nouvelle configuration
-  
+  afin de relancer la mise à jour pour les plugins
 
 ## Contenu du container docker
 
