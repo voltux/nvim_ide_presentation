@@ -44,10 +44,7 @@ RUN python3 -m venv debugpy
 RUN ./debugpy/bin/pip install debugpy
 WORKDIR /home/voltux
 
-RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
-RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User LspInstallComplete quitall' "+MasonInstall python-lsp-server" "+sleep 3" +qa
-RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User TSInstallComplete quitall' "+TSInstall python" "+sleep 10" +qa
-RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+RUN /home/voltux/opt/nvim-linux64/bin/nvim --headless -c 'autocmd User LazySync quitall' -c 'Lazy sync'
 
 # Configure git
 RUN git config --global user.email "voltux@debian-nvim.com"
