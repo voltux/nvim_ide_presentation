@@ -14,7 +14,7 @@ USER voltux
 WORKDIR /home/voltux
 RUN mkdir opt
 WORKDIR /home/voltux/opt
-RUN wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.tar.gz
+RUN wget https://github.com/neovim/neovim/releases/download/v0.9.2/nvim-linux64.tar.gz
 RUN tar -xzvf nvim-linux64.tar.gz
 RUN rm nvim-linux64.tar.gz
 RUN echo 'alias nvim=$HOME/opt/nvim-linux64/bin/nvim' >> /home/voltux/.bashrc
